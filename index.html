@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>maploy | video editor portfolio</title>
+    
+    <!-- Подключаем Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    
     <script type="importmap">
     {
       "imports": {
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "react": "https://esm.sh/react@^19.2.4",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
-        "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+        "react": "https://esm.sh/react@19.2.4",
+        "react-dom": "https://esm.sh/react-dom@19.2.4",
+        "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.475.0",
+        "@google/genai": "https://esm.sh/@google/genai@1.41.0"
       }
     }
     </script>
+
     <script type="module" src="/index.tsx"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -33,6 +40,7 @@
         }
       }
     </script>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <div id="root"></div>
